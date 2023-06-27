@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background: #eee;
+}
+
+.container{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container .title{
+   font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap:2rem;
+}
+
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .products-container .product:hover{
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.container .products-container .product img{
+   height: 25rem;
+}
+
+.container .products-container .product:hover img{
+   transform: scale(.9);
+}
+
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+
+.container .products-container .product:hover h3{
+   color:#27ae60;
+}
+.product-text{
+   padding: 20px;
+   border: none;
+   font-size: 2em;
+   background-color: #fff;
+   text-align: center;
+}
+
+.products-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   min-width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+
+.products-preview .preview{
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   border: 2px solid white;
+}
+
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+.products-preview .preview img{
+   min-height: 25%;
+   width: 25%;
+}
+
+.products-preview span{
+   position: absolute;
+   top: 0;
+   right: 10px;
+   font-size: 40px;
+   font-weight: bolder;
+   color: black;
+   cursor: pointer;
+} 
+
+.products-preview .preview h3{
+   color:#444;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.products-preview .preview .f1{
+   float: left;
+   height: 385px;
+   border: 2px solid white;
+   width: 50%;
+}
+.products-preview .preview .f2{
+   float: right;
+   border: 2px solid white;
+   width: 45%;
+}
+
+
+
+
+.products-preview .preview{
+      min-width: 50%;
+      min-height: 50%;
+      max-width: 100%;
+      min-height: 100%
+      
+   }
+   .products-preview .preview .p1{
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .products-preview .preview .p2{
+      float: left;
+      width: 120px;
+      height: 20px;
+       flex:1 1;
+       border:.1rem solid #444;
+   }
+   .products-preview .preview .p3{
+      width: 120px;
+      float: left;
+      height: 27px;
+      border-radius: 2px;
+   padding: 5px 5px;
+   border: 1px solid black;
+   }
+   .products-preview .preview .button{
+      background-color: skyblue;
+    padding: 10px;
+    border-radius: 5px;
+   }
+   
+
+
+
+
+
+input{
+   border: 1px solid black;
+   
+}
+
+
+
+
